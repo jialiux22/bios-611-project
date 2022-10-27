@@ -1,0 +1,18 @@
+---
+title: "report"
+author: "Jialiu Xie"
+date: '2022-10-27'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tinytex)
+```
+
+
+![Salary](figure/salary.png)
+![Salary by year](figure/salary.year.png)
