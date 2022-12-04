@@ -33,10 +33,17 @@ make clean
 make .created-dirs
 ```
 
-3. Use data_process to generate the figure and processed data:
+3. Use data_process.R to generate processed data:
 
 ```
-make derived_data/salary.csv figure/salary.png figure/salary.year.png
+make derived_data/salary.csv
+
+```
+
+4. Use data_analyze.R to generate the figure:
+
+```
+make figure/estimate_table.png figure/anova_table.png figure/boxplot1.png figure/boxplot2.png predict_plot.png
 ```
 
 4. Generate the report:
@@ -44,3 +51,11 @@ make derived_data/salary.csv figure/salary.png figure/salary.year.png
 ```
 make report.pdf
 ```
+
+5. Use RShiny to look up the data and the boxplot figures by filtering the data:
+
+```
+make shiny
+
+```
+
